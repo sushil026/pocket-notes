@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import style from './App.module.css';
+import Notes from './components/Notes/Notes';
+import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className= {style.App}>
+      <Sidebar/>
+      <Notes/>
     </div>
   );
 }

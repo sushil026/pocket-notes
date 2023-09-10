@@ -1,0 +1,63 @@
+.app{
+   height: 100%;
+   width: 100%;
+   font-family: 'Roboto';
+   letter-spacing: 0.03rem;
+   position: relative;
+}
+.header{
+   display: flex;
+   align-items: baseline;
+   padding: 10px 20px;
+   height: 8%;
+   background-color: #E8E8E8;
+}
+.avatar{
+   background-color: blue;
+   color: aliceblue;
+   height: 8vh;
+   width: 4vw;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.inputdiv{
+   position: absolute;
+   height: 32%;
+   width: 100%;
+   background-color: #E8E8E8;
+   display: flex;
+   justify-content: center;
+   bottom: 0;
+
+}
+textarea{
+   position: relative;
+   margin: 3vh;
+   width: 90%;
+   border-radius: 0.5em;
+   resize: none;
+   padding: 10px 20px;
+   font: 1.2rem 'Roboto';
+   letter-spacing: 0.02em;
+   border: none;
+   outline: none;
+}
+.send{
+   height: fit-content;
+   width: fit-content;
+   cursor: pointer;
+   position: absolute;
+   bottom: 4.5vh;
+   right: 3.5vw;
+}
+img{
+   height: 3vh;
+   width: 3vw;
+}
+.contentContainer{
+   height: 60%;
+   overflow-y: auto;
+   scrollbar-gutter: stable ;
+}
