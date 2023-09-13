@@ -5,7 +5,7 @@ import splashImg from "../../../../assets/splash.svg";
 const SplashScreen=()=> {
   return (
     <div className={splash.app}>
-      <img src={splashImg} className={splash.image} alt='spalsh image' />
+      <img src={splashImg} className={splash.splImg} alt="spalsh-image"/>
       <div className={splash.text}>
         <h1>Pocket Notes</h1>
         <h3>

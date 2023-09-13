@@ -53,7 +53,7 @@ const Notepad = ({ groupID }) => {
           onKeyDown={handleShiftEnter}
         />
         <span className={NotepadStyle.send} onClick={addNote}>
-          <img src={send} />
+          <img alt="send"  src={send} />
         </span>
       </div>
     </div>

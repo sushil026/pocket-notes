@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ModalStyle from "./Modal.module.css";
 import useAddGroup from "../../../hooks/useAddGroup";
 
