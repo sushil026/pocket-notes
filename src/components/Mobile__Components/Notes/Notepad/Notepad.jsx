@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import NotepadStyle from "./Notepad.module.css";
 import send from "../../../../assets/send.svg";
 import back from "../../../../assets/back.svg";
@@ -15,9 +15,10 @@ const Notepad = ({ groupID, handleBack }) => {
     addNote,
     handleShiftEnter,
   } = useNotes(groupID);
+  const [k, setK] = useState(0);
 
   return (
-    <div className={NotepadStyle.app}>
+    <div className={NotepadStyle.app} style={(k)?{minHeight: '5vh', overflowY:'hidden'}:{}}>
       <div className={NotepadStyle.header}>
         <div
           className={NotepadStyle.back}
@@ -59,13 +60,16 @@ const Notepad = ({ groupID, handleBack }) => {
         <br />
         <div ref={endRef} />
       </div>
-      <div className={NotepadStyle.inputdiv}>
+      <div 
+         className={NotepadStyle.inputdiv}>
         <textarea
           placeholder="Enter your text here..........."
           value={note}
           onChange={(e) => {
             setNote(e.target.value);
           }}
+          onFocus={()=>{setK(1)}}
+          onBlur={()=>{setK(0)}}
           onKeyDown={handleShiftEnter}
         />
         <span className={NotepadStyle.send} onClick={addNote}>

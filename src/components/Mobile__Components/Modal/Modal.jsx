@@ -23,7 +23,6 @@ const Modal = ({ closeModal }) => {
   return (
     <div className={ModalStyle.app}>
       <div className={ModalStyle.shadow} onClick={clickedOutside}></div>
-
       <div className={ModalStyle.container}>
         <div className={ModalStyle.containerHolder}>
           <span className={ModalStyle.title}>Create New Notes group</span>
@@ -40,7 +39,6 @@ const Modal = ({ closeModal }) => {
                 setName(val);
               }}
             />
-
             {error ? (
               <p
                 style={{ color: "red", fontSize: "0.9rem", fontWeight: "400" }}
@@ -75,7 +73,6 @@ const Modal = ({ closeModal }) => {
             </div>
           </span>
         </div>
-
         <div onClick={createGrp} className={ModalStyle.button}>
           <p>Create</p>
         </div>

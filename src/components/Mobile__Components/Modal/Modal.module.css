@@ -1,7 +1,7 @@
 .app {
-  position: fixed;
+  position: absolute;
   background: rgba(16, 16, 16, 0.5);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -12,15 +12,19 @@
   font-weight: 500;
 }
 .shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
 }
 .container {
-  position: fixed;
+  position: absolute;
+  top: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-width: 20%;
+  min-height: 20%;
   max-width: 90%;
   background-color: white;
   padding: 1% 3%;

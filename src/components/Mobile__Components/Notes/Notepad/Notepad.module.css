@@ -78,7 +78,7 @@ img {
   min-width: 20%;
 }
 .contentDiv {
-  height: max-content;
+  height: fit-content;
   width: 100%;
   padding-right: 7%;
   word-wrap: break-word;
@@ -89,7 +89,7 @@ img {
     display: block;
   }
   .contentDiv {
-    height: max-content;
+    height: fit-content;
     max-width: 90%;
     margin-top: 2%;
     padding: 0 10%;
@@ -119,7 +119,7 @@ img {
 @media (max-width: 300px) {
   .contentDiv {
     font-size: 0.8rem;
-    height: max-content;
+    height: fit-content;
     max-width: 90%;
     margin-top: 2%;
     padding: 0 10%;
