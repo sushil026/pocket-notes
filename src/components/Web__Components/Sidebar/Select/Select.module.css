@@ -1,0 +1,33 @@
+.app{
+   margin-top: 0.6rem;
+   height: 10vh;
+}
+.main :hover{
+   cursor: pointer;
+}
+.main{
+   display: flex;
+   margin-left: 5vh;
+   align-items: center;
+   height: 100%;
+   border-radius: 10rem 0 0 10rem;
+   padding-left: 1vw;
+   font-size: 1rem;
+   font-weight: 500;
+   overflow-x : hidden;
+}
+.title{
+   width: 80%;
+   margin-left: 3rem;
+}
+.avatar{
+   font-size: 1.5em;
+   letter-spacing: 0;
+   color: white;
+   height: fit-content;
+   width: fit-content;
+   padding: 10px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 5px #000000;
+   text-shadow: 2px 2px 5px #000000;
+}

@@ -1,0 +1,128 @@
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto";
+  letter-spacing: 0.03rem;
+  position: relative;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-height: 5%;
+  background-color: #dbdbdb;
+  letter-spacing: 0.07em;
+  text-shadow: 0px 0px 20px #000000;
+}
+.avatar {
+  margin: 0 3%;
+  font-size: 1rem;
+  letter-spacing: 0;
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #000000;
+  text-shadow: 2px 2px 5px #000000;
+}
+.inputdiv {
+  position: absolute;
+  min-height: 25%;
+  width: 100%;
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+textarea {
+  position: relative;
+  max-width: 90%;
+  border-radius: 0.5em;
+  resize: none;
+  padding: 10px 20px;
+  font: 1.1rem "Roboto";
+  letter-spacing: 0.02em;
+  border: none;
+  outline: none;
+}
+.send {
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+}
+img {
+  height: 3vh;
+  width: 3vw;
+}
+.contentContainer {
+  height: 65%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable;
+}
+.note {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  margin: 3% 0%;
+  letter-spacing: 0.02rem;
+  white-space: pre-line;
+}
+.timestamp {
+  font-size: 0.8rem;
+  margin: 0 3%;
+  min-width: 20%;
+}
+.contentDiv {
+  height: max-content;
+  width: 100%;
+  padding-right: 7%;
+  word-wrap: break-word;
+}
+
+@media (max-width: 350px) {
+  .note {
+    display: block;
+  }
+  .contentDiv {
+    height: max-content;
+    max-width: 90%;
+    margin-top: 2%;
+    padding: 0 10%;
+    word-wrap: break-word;
+  }
+  .inputdiv {
+    position: absolute;
+    max-height: 25%;
+    width: 100%;
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+  }
+  textarea {
+    position: relative;
+    width: 90%;
+    border-radius: 0.5em;
+    resize: none;
+    padding: 10px 20px;
+    font: 1.1rem "Roboto";
+    letter-spacing: 0.02em;
+    border: none;
+    outline: none;
+  }
+}
+@media (max-width: 300px) {
+  .contentDiv {
+    font-size: 0.8rem;
+    height: max-content;
+    max-width: 90%;
+    margin-top: 2%;
+    padding: 0 10%;
+    word-wrap: break-word;
+  }
+}

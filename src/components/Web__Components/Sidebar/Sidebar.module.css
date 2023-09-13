@@ -1,0 +1,47 @@
+.main {
+  height: 100%;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0;
+  font-family: "Roboto";
+  letter-spacing: 0.07rem;
+}
+.logo {
+  margin: 7% 12% 0;
+  font-size: 1.4rem;
+}
+.grps {
+  height: max-content;
+  overflow-y: auto;
+  padding-bottom: 15%;
+}
+
+.button {
+  height: fit-content;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1vh 0vw;
+}
+.button :hover {
+  cursor: pointer;
+}
+
+.buttonContent {
+  background-color: black;
+  color: aliceblue;
+  min-width: 70%;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  letter-spacing: 0.07rem;
+  justify-content: center;
+  border-radius: 5rem;
+  padding: 2%;
+  font-weight: 400;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}

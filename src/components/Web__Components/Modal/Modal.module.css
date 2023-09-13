@@ -1,0 +1,85 @@
+.app {
+  position: fixed;
+  background: rgba(16, 16, 16, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shadow {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 25%;
+  min-width: 35%;
+  background-color: white;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.15em;
+  padding: 3%;
+  border-radius: 0.5rem;
+}
+
+.container span {
+  display: flex;
+  width: 90%;
+  gap: 5vh;
+  align-items: center;
+  vertical-align: middle;
+}
+
+input {
+  height: 3.5vh;
+  width: 60%;
+  border-radius: 5em;
+  outline: none;
+  border: 2px #c3c3c3 solid;
+  padding: 5px 15px;
+  font-size: 1em;
+}
+
+.button {
+  margin-left: 75%;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  width: 20%;
+  border-radius: 0.5em;
+  padding: 1%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.customRadioButton {
+  position: relative;
+  height: 100%;
+  width: fit-content;
+}
+
+.customRadioButton input {
+  position: absolute;
+  opacity: 0;
+}
+
+.customRadioFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+}
+
+.customRadioButton:hover .customRadioFill {
+  border: 2px solid #888;
+}
+.container input:checked + .customRadioFill {
+  border: #888888 3px solid;
+}

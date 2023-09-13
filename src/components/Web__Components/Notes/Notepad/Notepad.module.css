@@ -10,23 +10,26 @@
    align-items: baseline;
    padding: 10px 20px;
    height: 8%;
-   background-color: #E8E8E8;
+   background-color: #dbdbdb;
+   letter-spacing: 0.07em;
+   text-shadow: 0px 0px 15px #000000;
 }
 .avatar{
-   background-color: blue;
-   color: aliceblue;
-   height: 8vh;
-   width: 4vw;
+   font-size: 1em;
+   letter-spacing: 0;
+   color: white;
+   height: fit-content;
+   width: fit-content;
+   padding: 10px;
    border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   box-shadow: 0px 0px 5px #000000;
+   text-shadow: 2px 2px 5px #000000;
 }
 .inputdiv{
    position: absolute;
    height: 32%;
    width: 100%;
-   background-color: #E8E8E8;
+   background-color: #dbdbdb;
    display: flex;
    justify-content: center;
    bottom: 0;
@@ -60,4 +63,35 @@ img{
    height: 60%;
    overflow-y: auto;
    scrollbar-gutter: stable ;
+}
+hr {
+   border: 0;
+   height: 2px;
+   background: #ccc;
+   margin: 5px 100px;
+ }
+ 
+ .note{
+   height: fit-content;
+   width: 100%;
+   display: flex;
+   margin: 3% 0%;
+   letter-spacing: 0.02rem;
+   white-space: pre-line;
+}
+ .timestamp{
+   margin: 0 2vw;
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.contentDiv{
+   margin-left: 1vw;
+   overflow-x: hidden;
+   height: max-content;
+   width: 100%;
+   padding-right: 7%;
+   word-wrap: break-word;
 }

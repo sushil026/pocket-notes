@@ -1,13 +1,29 @@
-import style from './App.module.css';
-import Notes from './components/Notes/Notes';
-import Sidebar from './components/Sidebar/Sidebar';
+import React, { useEffect, useState } from 'react';
+import WebView from './views/WebView';
+import MobileView from './views/MobileView';
 
-function App() {
+const App = () => {
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+      setScreenHeight(window.innerHeight);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <div className= {style.App}>
-      <Sidebar/>
-      <Notes/>
-    </div>
+    <>
+      {
+        (screenWidth < 800 || (screenHeight > screenWidth)) ? <MobileView /> : <WebView />
+      }
+    </>
   );
 }
 
